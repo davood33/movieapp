@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="search">
+        <h2 class="logo">Logo</h2>
+        <div class="input-container">
+          <input
+            type="text"
+            class="search-bar"
+            id="search-bar"
+            placeholder="Search for movies"
+          />
+          <button type="submit" class="search-button">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+      <ul class="nav-bar">
+        <li id="genres-link"><a href="#">Genre</a>
+          <ul class="genres-container">
+            <li class="genres-suggested" value="28">Action</li>
+            <li class="genres-suggested" value="12">Adventure</li>
+            <li class="genres-suggested" value="35">Comedy</li>
+            <li class="genres-suggested" value="80">Crime</li>
+            <li class="genres-suggested" value="18">Drama</li>
+            <li class="genres-suggested" value="10751">Family</li>
+            <li class="genres-suggested" value="27">Horror</li>
+            <li class="genres-suggested" value="10402">Music</li>
+            <li class="genres-suggested" value="10749">Romance</li>
+            <li class="genres-suggested" value="878">Sience Fiction</li>
+          </ul>
+        </li>
+        <li><a href="#">Year</a>
+          <ul class="years-container">
+            <li class="years-suggested" value="2021">2021</li>
+            <li class="years-suggested" value="2020">2020</li>
+            <li class="years-suggested" value="2019">2019</li>
+            <li class="years-suggested" value="2018">2018</li>
+            <li class="years-suggested" value="2017">2017</li>
+            <li class="years-suggested" value="2016">2016</li>
+            <li class="years-suggested" value="2015">2015</li>
+            <li class="years-suggested" value="2014">2014</li>
+            <li class="years-suggested" value="2013">2013</li>
+            <li class="years-suggested" value="2012">2012</li>
+          </ul>
+        </li>
+        <li><a href="#">Rating</a></li>
+        <li><a href="#">Home</a></li>
+      </ul>
+    </header>
+    <div class="main">
+      <div class="paging-container">
+        <ul class="paging-ul">
+          <li id="previous">Previous</li>
+          <li class="page-num">1</li>
+          <li class="page-num">2</li>
+          <li class="page-num">3</li>
+          <li class="page-num">4</li>
+          <li class="page-num">5</li>
+          <li id="next">Next</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+  <script src="./js/check.js"></script>
+  <script src="./js/page-navigator-years.js"></script>
+  <script src="./js/clear-main.js"></script>
+  <script src="./js/set-movies-value.js"></script>
+  <script src="./js/get-movie-bySearch.js"></script>
+  <script src="./js/genre-logic.js"></script>
+  <script src="./js/years-logic.js"></script>
+  <script src="./js/get-movies.js"></script>
+  <script  src="./js/app-years.js"></script>
+  
+</html>
